@@ -1,11 +1,16 @@
 /** @format */
 
 import { useState } from "react";
+import Button from "./components/button/Button";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <div className="bg-red-500">Hello World</div>;
+  return (
+    <div>
+      <Button theme="secondary">Hello</Button>
+    </div>
+  );
 }
 
 export default App;
