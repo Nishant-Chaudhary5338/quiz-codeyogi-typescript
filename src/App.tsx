@@ -2,13 +2,16 @@
 
 import { useState } from "react";
 import Button from "./components/button/Button";
+import Input from "./components/input/Input";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
-      <Button theme="secondary">Hello</Button>
+      <Input id="First Name" name="First Name">
+        First name
+      </Input>
     </div>
   );
 }
